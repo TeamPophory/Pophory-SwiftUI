@@ -14,6 +14,7 @@
 		3BC584E82C646531003763AF /* pophory_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584E72C646531003763AF /* pophory_TCATests.swift */; };
 		3BC584F22C646531003763AF /* pophory_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584F12C646531003763AF /* pophory_TCAUITests.swift */; };
 		3BC584F42C646531003763AF /* pophory_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584F32C646531003763AF /* pophory_TCAUITestsLaunchTests.swift */; };
+		3BC585202C6470FE003763AF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC5851F2C6470FE003763AF /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3BC584ED2C646531003763AF /* pophory-TCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pophory-TCAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC584F12C646531003763AF /* pophory_TCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pophory_TCAUITests.swift; sourceTree = "<group>"; };
 		3BC584F32C646531003763AF /* pophory_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pophory_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BC5851F2C6470FE003763AF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				3BC584DA2C646531003763AF /* Assets.xcassets */,
+				3BC5851F2C6470FE003763AF /* Colors.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC585202C6470FE003763AF /* Colors.xcassets in Resources */,
 				3BC584DE2C646531003763AF /* Preview Assets.xcassets in Resources */,
 				3BC584DB2C646531003763AF /* Assets.xcassets in Resources */,
 			);
