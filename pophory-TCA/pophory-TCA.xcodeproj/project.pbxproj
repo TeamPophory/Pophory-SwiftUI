@@ -94,9 +94,11 @@
 		3BC584D52C646530003763AF /* pophory-TCA */ = {
 			isa = PBXGroup;
 			children = (
+				3BC5851E2C646B23003763AF /* Network */,
+				3BC585152C6468E8003763AF /* Global */,
+				3BC585002C6467CA003763AF /* Presentation */,
 				3BC584D62C646530003763AF /* pophory_TCAApp.swift */,
 				3BC584D82C646530003763AF /* ContentView.swift */,
-				3BC584DA2C646531003763AF /* Assets.xcassets */,
 				3BC584DC2C646531003763AF /* Preview Content */,
 			);
 			path = "pophory-TCA";
@@ -125,6 +127,228 @@
 				3BC584F32C646531003763AF /* pophory_TCAUITestsLaunchTests.swift */,
 			);
 			path = "pophory-TCAUITests";
+			sourceTree = "<group>";
+		};
+		3BC585002C6467CA003763AF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3BC585012C6467D3003763AF /* SplashFlow */,
+				3BC585072C64682C003763AF /* AuthFlow */,
+				3BC585062C646822003763AF /* MyPageFlow */,
+				3BC585052C646818003763AF /* HomeFlow */,
+				3BC585042C646810003763AF /* AlbumFlow */,
+				3BC585032C646803003763AF /* PhotoUploadFlow */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3BC585012C6467D3003763AF /* SplashFlow */ = {
+			isa = PBXGroup;
+			children = (
+				3BC585122C6468BC003763AF /* Splash */,
+			);
+			path = SplashFlow;
+			sourceTree = "<group>";
+		};
+		3BC585032C646803003763AF /* PhotoUploadFlow */ = {
+			isa = PBXGroup;
+			children = (
+				3BC585142C6468CE003763AF /* AddPhoto */,
+				3BC585132C6468C9003763AF /* PhotoPicker */,
+			);
+			path = PhotoUploadFlow;
+			sourceTree = "<group>";
+		};
+		3BC585042C646810003763AF /* AlbumFlow */ = {
+			isa = PBXGroup;
+			children = (
+				3BC585112C6468B5003763AF /* Share */,
+				3BC585102C6468AC003763AF /* PhotoDetail */,
+				3BC5850F2C6468A6003763AF /* ChangeSort */,
+			);
+			path = AlbumFlow;
+			sourceTree = "<group>";
+		};
+		3BC585052C646818003763AF /* HomeFlow */ = {
+			isa = PBXGroup;
+			children = (
+				3BC5850E2C64689E003763AF /* AlbumDetail */,
+				3BC5850D2C646896003763AF /* EditAlubmCover */,
+			);
+			path = HomeFlow;
+			sourceTree = "<group>";
+		};
+		3BC585062C646822003763AF /* MyPageFlow */ = {
+			isa = PBXGroup;
+			children = (
+				3BC5850C2C646871003763AF /* Withdraw */,
+				3BC5850B2C646868003763AF /* Setting */,
+			);
+			path = MyPageFlow;
+			sourceTree = "<group>";
+		};
+		3BC585072C64682C003763AF /* AuthFlow */ = {
+			isa = PBXGroup;
+			children = (
+				3BC5850A2C64685B003763AF /* Auth */,
+				3BC585082C64683D003763AF /* Onboarding */,
+				3BC585092C64684C003763AF /* TabBar */,
+			);
+			path = AuthFlow;
+			sourceTree = "<group>";
+		};
+		3BC585082C64683D003763AF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3BC585092C64684C003763AF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		3BC5850A2C64685B003763AF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3BC5850B2C646868003763AF /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		3BC5850C2C646871003763AF /* Withdraw */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Withdraw;
+			sourceTree = "<group>";
+		};
+		3BC5850D2C646896003763AF /* EditAlubmCover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EditAlubmCover;
+			sourceTree = "<group>";
+		};
+		3BC5850E2C64689E003763AF /* AlbumDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AlbumDetail;
+			sourceTree = "<group>";
+		};
+		3BC5850F2C6468A6003763AF /* ChangeSort */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChangeSort;
+			sourceTree = "<group>";
+		};
+		3BC585102C6468AC003763AF /* PhotoDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoDetail;
+			sourceTree = "<group>";
+		};
+		3BC585112C6468B5003763AF /* Share */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		3BC585122C6468BC003763AF /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		3BC585132C6468C9003763AF /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoPicker;
+			sourceTree = "<group>";
+		};
+		3BC585142C6468CE003763AF /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddPhoto;
+			sourceTree = "<group>";
+		};
+		3BC585152C6468E8003763AF /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				3BC585162C6468F1003763AF /* Assets */,
+				3BC5851C2C646953003763AF /* Constants */,
+				3BC5851B2C646947003763AF /* Extensions */,
+				3BC5851A2C646942003763AF /* Firebase */,
+				3BC585192C64691A003763AF /* Utilities */,
+				3BC585172C646905003763AF /* Supports */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		3BC585162C6468F1003763AF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3BC584DA2C646531003763AF /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3BC585172C646905003763AF /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		3BC585192C64691A003763AF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3BC5851A2C646942003763AF /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		3BC5851B2C646947003763AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3BC5851C2C646953003763AF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3BC5851E2C646B23003763AF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
