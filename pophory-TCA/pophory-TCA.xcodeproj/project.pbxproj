@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BC584D72C646530003763AF /* pophory_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584D62C646530003763AF /* pophory_TCAApp.swift */; };
+		3BC584D92C646530003763AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584D82C646530003763AF /* ContentView.swift */; };
+		3BC584DB2C646531003763AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC584DA2C646531003763AF /* Assets.xcassets */; };
+		3BC584DE2C646531003763AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC584DD2C646531003763AF /* Preview Assets.xcassets */; };
+		3BC584E82C646531003763AF /* pophory_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584E72C646531003763AF /* pophory_TCATests.swift */; };
+		3BC584F22C646531003763AF /* pophory_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584F12C646531003763AF /* pophory_TCAUITests.swift */; };
+		3BC584F42C646531003763AF /* pophory_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584F32C646531003763AF /* pophory_TCAUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BC584E42C646531003763AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC584CB2C646530003763AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC584D22C646530003763AF;
+			remoteInfo = "pophory-TCA";
+		};
+		3BC584EE2C646531003763AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC584CB2C646530003763AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC584D22C646530003763AF;
+			remoteInfo = "pophory-TCA";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BC584D32C646530003763AF /* pophory-TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pophory-TCA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC584D62C646530003763AF /* pophory_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pophory_TCAApp.swift; sourceTree = "<group>"; };
+		3BC584D82C646530003763AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3BC584DA2C646531003763AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BC584DD2C646531003763AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BC584E32C646531003763AF /* pophory-TCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pophory-TCATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC584E72C646531003763AF /* pophory_TCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pophory_TCATests.swift; sourceTree = "<group>"; };
+		3BC584ED2C646531003763AF /* pophory-TCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pophory-TCAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC584F12C646531003763AF /* pophory_TCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pophory_TCAUITests.swift; sourceTree = "<group>"; };
+		3BC584F32C646531003763AF /* pophory_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pophory_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BC584D02C646530003763AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC584E02C646531003763AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC584EA2C646531003763AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BC584CA2C646530003763AF = {
+			isa = PBXGroup;
+			children = (
+				3BC584D52C646530003763AF /* pophory-TCA */,
+				3BC584E62C646531003763AF /* pophory-TCATests */,
+				3BC584F02C646531003763AF /* pophory-TCAUITests */,
+				3BC584D42C646530003763AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BC584D42C646530003763AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BC584D32C646530003763AF /* pophory-TCA.app */,
+				3BC584E32C646531003763AF /* pophory-TCATests.xctest */,
+				3BC584ED2C646531003763AF /* pophory-TCAUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BC584D52C646530003763AF /* pophory-TCA */ = {
+			isa = PBXGroup;
+			children = (
+				3BC584D62C646530003763AF /* pophory_TCAApp.swift */,
+				3BC584D82C646530003763AF /* ContentView.swift */,
+				3BC584DA2C646531003763AF /* Assets.xcassets */,
+				3BC584DC2C646531003763AF /* Preview Content */,
+			);
+			path = "pophory-TCA";
+			sourceTree = "<group>";
+		};
+		3BC584DC2C646531003763AF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3BC584DD2C646531003763AF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BC584E62C646531003763AF /* pophory-TCATests */ = {
+			isa = PBXGroup;
+			children = (
+				3BC584E72C646531003763AF /* pophory_TCATests.swift */,
+			);
+			path = "pophory-TCATests";
+			sourceTree = "<group>";
+		};
+		3BC584F02C646531003763AF /* pophory-TCAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3BC584F12C646531003763AF /* pophory_TCAUITests.swift */,
+				3BC584F32C646531003763AF /* pophory_TCAUITestsLaunchTests.swift */,
+			);
+			path = "pophory-TCAUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BC584D22C646530003763AF /* pophory-TCA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC584F72C646531003763AF /* Build configuration list for PBXNativeTarget "pophory-TCA" */;
+			buildPhases = (
+				3BC584CF2C646530003763AF /* Sources */,
+				3BC584D02C646530003763AF /* Frameworks */,
+				3BC584D12C646530003763AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pophory-TCA";
+			productName = "pophory-TCA";
+			productReference = 3BC584D32C646530003763AF /* pophory-TCA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BC584E22C646531003763AF /* pophory-TCATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC584FA2C646531003763AF /* Build configuration list for PBXNativeTarget "pophory-TCATests" */;
+			buildPhases = (
+				3BC584DF2C646531003763AF /* Sources */,
+				3BC584E02C646531003763AF /* Frameworks */,
+				3BC584E12C646531003763AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BC584E52C646531003763AF /* PBXTargetDependency */,
+			);
+			name = "pophory-TCATests";
+			productName = "pophory-TCATests";
+			productReference = 3BC584E32C646531003763AF /* pophory-TCATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3BC584EC2C646531003763AF /* pophory-TCAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC584FD2C646531003763AF /* Build configuration list for PBXNativeTarget "pophory-TCAUITests" */;
+			buildPhases = (
+				3BC584E92C646531003763AF /* Sources */,
+				3BC584EA2C646531003763AF /* Frameworks */,
+				3BC584EB2C646531003763AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BC584EF2C646531003763AF /* PBXTargetDependency */,
+			);
+			name = "pophory-TCAUITests";
+			productName = "pophory-TCAUITests";
+			productReference = 3BC584ED2C646531003763AF /* pophory-TCAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BC584CB2C646530003763AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					3BC584D22C646530003763AF = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					3BC584E22C646531003763AF = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 3BC584D22C646530003763AF;
+					};
+					3BC584EC2C646531003763AF = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 3BC584D22C646530003763AF;
+					};
+				};
+			};
+			buildConfigurationList = 3BC584CE2C646530003763AF /* Build configuration list for PBXProject "pophory-TCA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BC584CA2C646530003763AF;
+			productRefGroup = 3BC584D42C646530003763AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BC584D22C646530003763AF /* pophory-TCA */,
+				3BC584E22C646531003763AF /* pophory-TCATests */,
+				3BC584EC2C646531003763AF /* pophory-TCAUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BC584D12C646530003763AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC584DE2C646531003763AF /* Preview Assets.xcassets in Resources */,
+				3BC584DB2C646531003763AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC584E12C646531003763AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC584EB2C646531003763AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BC584CF2C646530003763AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC584D92C646530003763AF /* ContentView.swift in Sources */,
+				3BC584D72C646530003763AF /* pophory_TCAApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC584DF2C646531003763AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC584E82C646531003763AF /* pophory_TCATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC584E92C646531003763AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC584F22C646531003763AF /* pophory_TCAUITests.swift in Sources */,
+				3BC584F42C646531003763AF /* pophory_TCAUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BC584E52C646531003763AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC584D22C646530003763AF /* pophory-TCA */;
+			targetProxy = 3BC584E42C646531003763AF /* PBXContainerItemProxy */;
+		};
+		3BC584EF2C646531003763AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC584D22C646530003763AF /* pophory-TCA */;
+			targetProxy = 3BC584EE2C646531003763AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3BC584F52C646531003763AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BC584F62C646531003763AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BC584F82C646531003763AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pophory-TCA/Preview Content\"";
+				DEVELOPMENT_TEAM = CQJ9UKUU35;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pophoryTCA.pophory-TCA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BC584F92C646531003763AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pophory-TCA/Preview Content\"";
+				DEVELOPMENT_TEAM = CQJ9UKUU35;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pophoryTCA.pophory-TCA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3BC584FB2C646531003763AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQJ9UKUU35;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pophoryTCA.pophory-TCATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pophory-TCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pophory-TCA";
+			};
+			name = Debug;
+		};
+		3BC584FC2C646531003763AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQJ9UKUU35;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pophoryTCA.pophory-TCATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pophory-TCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pophory-TCA";
+			};
+			name = Release;
+		};
+		3BC584FE2C646531003763AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQJ9UKUU35;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pophoryTCA.pophory-TCAUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "pophory-TCA";
+			};
+			name = Debug;
+		};
+		3BC584FF2C646531003763AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQJ9UKUU35;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pophoryTCA.pophory-TCAUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "pophory-TCA";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BC584CE2C646530003763AF /* Build configuration list for PBXProject "pophory-TCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC584F52C646531003763AF /* Debug */,
+				3BC584F62C646531003763AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC584F72C646531003763AF /* Build configuration list for PBXNativeTarget "pophory-TCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC584F82C646531003763AF /* Debug */,
+				3BC584F92C646531003763AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC584FA2C646531003763AF /* Build configuration list for PBXNativeTarget "pophory-TCATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC584FB2C646531003763AF /* Debug */,
+				3BC584FC2C646531003763AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC584FD2C646531003763AF /* Build configuration list for PBXNativeTarget "pophory-TCAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC584FE2C646531003763AF /* Debug */,
+				3BC584FF2C646531003763AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BC584CB2C646530003763AF /* Project object */;
+}
