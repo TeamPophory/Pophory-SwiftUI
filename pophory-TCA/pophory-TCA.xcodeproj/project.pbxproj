@@ -97,8 +97,6 @@
 				3BC5851E2C646B23003763AF /* Network */,
 				3BC585152C6468E8003763AF /* Global */,
 				3BC585002C6467CA003763AF /* Presentation */,
-				3BC584D62C646530003763AF /* pophory_TCAApp.swift */,
-				3BC584D82C646530003763AF /* ContentView.swift */,
 				3BC584DC2C646531003763AF /* Preview Content */,
 			);
 			path = "pophory-TCA";
@@ -312,6 +310,8 @@
 		3BC585172C646905003763AF /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				3BC584D62C646530003763AF /* pophory_TCAApp.swift */,
+				3BC584D82C646530003763AF /* ContentView.swift */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
