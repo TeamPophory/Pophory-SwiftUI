@@ -132,8 +132,8 @@
 			children = (
 				3BC585012C6467D3003763AF /* SplashFlow */,
 				3BC585072C64682C003763AF /* AuthFlow */,
-				3BC585062C646822003763AF /* MyPageFlow */,
 				3BC585052C646818003763AF /* HomeFlow */,
+				3BC585062C646822003763AF /* MyPageFlow */,
 				3BC585042C646810003763AF /* AlbumFlow */,
 				3BC585032C646803003763AF /* PhotoUploadFlow */,
 			);
@@ -171,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				3BC5850E2C64689E003763AF /* AlbumDetail */,
-				3BC5850D2C646896003763AF /* EditAlubmCover */,
+				3BC5850D2C646896003763AF /* EditAlbumCover */,
 			);
 			path = HomeFlow;
 			sourceTree = "<group>";
@@ -230,11 +230,11 @@
 			path = Withdraw;
 			sourceTree = "<group>";
 		};
-		3BC5850D2C646896003763AF /* EditAlubmCover */ = {
+		3BC5850D2C646896003763AF /* EditAlbumCover */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = EditAlubmCover;
+			path = EditAlbumCover;
 			sourceTree = "<group>";
 		};
 		3BC5850E2C64689E003763AF /* AlbumDetail */ = {
