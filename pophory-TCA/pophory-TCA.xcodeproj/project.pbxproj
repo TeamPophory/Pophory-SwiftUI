@@ -13,6 +13,7 @@
 		3B1C335D2C65B552001DB285 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BC585242C6472AB003763AF /* Pretendard-SemiBold.otf */; };
 		3B1C335E2C65B552001DB285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC584DA2C646531003763AF /* Assets.xcassets */; };
 		3B1C335F2C65B552001DB285 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC5851F2C6470FE003763AF /* Colors.xcassets */; };
+		37CBFBF72C65B6390049332C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 37CBFBF62C65B6390049332C /* ComposableArchitecture */; };
 		3BC584D72C646530003763AF /* pophory_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584D62C646530003763AF /* pophory_TCAApp.swift */; };
 		3BC584D92C646530003763AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584D82C646530003763AF /* ContentView.swift */; };
 		3BC584E82C646531003763AF /* pophory_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584E72C646531003763AF /* pophory_TCATests.swift */; };
@@ -63,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CBFBF72C65B6390049332C /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +396,9 @@
 			dependencies = (
 			);
 			name = "pophory-TCA";
+			packageProductDependencies = (
+				37CBFBF62C65B6390049332C /* ComposableArchitecture */,
+			);
 			productName = "pophory-TCA";
 			productReference = 3BC584D32C646530003763AF /* pophory-TCA.app */;
 			productType = "com.apple.product-type.application";
@@ -466,6 +471,9 @@
 				Base,
 			);
 			mainGroup = 3BC584CA2C646530003763AF;
+			packageReferences = (
+				37CBFBF52C65B6390049332C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 3BC584D42C646530003763AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -846,6 +854,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37CBFBF52C65B6390049332C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37CBFBF62C65B6390049332C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37CBFBF52C65B6390049332C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3BC584CB2C646530003763AF /* Project object */;
 }
