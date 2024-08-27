@@ -49,11 +49,11 @@ extension UIFontWithLineHeight {
 	
 	/// custom font
 	static func customPretendard(_ type: Pretendard, size: CGFloat, lineHeight: CGFloat) -> UIFontWithLineHeight {
-		return uifontWithLineHeight(makeUIFont(type, size: size), lineHeight)
+		return makeUifontWithLineHeight(makeUIFont(type, size: size), lineHeight)
 	}
 	
 	/// UIFont to UIFontWithLineHeight
-	static func uifontWithLineHeight(_ font: UIFont, _ lineHeight: CGFloat) -> UIFontWithLineHeight {
+	static func makeUifontWithLineHeight(_ font: UIFont, _ lineHeight: CGFloat) -> UIFontWithLineHeight {
 		return UIFontWithLineHeight(font: font, lineHeight: lineHeight)
 	}
 	
