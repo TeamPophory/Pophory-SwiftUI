@@ -10,12 +10,11 @@ import SwiftUI
 enum ButtonType {
     case standard
     case small
-    case custom
     case appleLogin
     
     var fontStyle: UIFontWithLineHeight {
         switch self {
-        case .standard, .custom, .appleLogin:
+        case .standard, .appleLogin:
             return .headline03SemiBold
         case .small:
             return .text01Medium
@@ -24,24 +23,24 @@ enum ButtonType {
     
     var dimensions: (width: CGFloat, height: CGFloat) {
         switch self {
-        case .standard, .custom, .appleLogin:
+        case .standard, .appleLogin:
             return (335, 60)
         case .small:
             return (248, 47)
         }
     }
     
-    var foregroundColor: Color {
-        switch self {
-        case .standard, .small, .appleLogin:
-            return .white
-        case .custom:
-            return .pryPurple
-        }
-    }
-    
     var isAppleLogin: Bool {
         self == .appleLogin
+    }
+    
+    func setTextColor(for backgroundColor: Color) -> Color {
+        switch self {
+        case .standard:
+            return backgroundColor == .white ? .pryPurple : .white
+        case .small, .appleLogin:
+            return .white
+        }
     }
 }
 
@@ -53,7 +52,7 @@ struct PophoryButtonStyle: ButtonStyle {
         configuration.label
             .frame(width: type.dimensions.width, height: type.dimensions.height)
             .background(backgroundColor)
-            .foregroundColor(type.foregroundColor)
+            .foregroundColor(type.setTextColor(for: backgroundColor))
             .cornerRadius(30)
             .opacity(configuration.isPressed ? 0.8 : 1.0)
     }
@@ -110,7 +109,7 @@ extension PophoryButton {
     VStack(spacing: 20) {
         PophoryButton(title: "포포리 버튼", action: {}, type: .standard, backgroundColor: .pryBlack)
         PophoryButton(title: "Apple ID로 시작하기", action: {}, type: .appleLogin, backgroundColor: .pryBlack)
-        PophoryButton(title: "커스텀 버튼", action: {}, type: .custom, backgroundColor: .white)
+        PophoryButton(title: "화이트 버튼", action: {}, type: .standard, backgroundColor: .white)
         PophoryButton(title: "작은 버튼 그레이", action: {}, type: .small, backgroundColor: .gray400)
     }
     .background(Color.gray300)
