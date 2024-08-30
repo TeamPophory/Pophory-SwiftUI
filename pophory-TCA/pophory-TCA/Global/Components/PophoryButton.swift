@@ -59,9 +59,9 @@ struct PophoryButtonStyle: ButtonStyle {
 }
 
 struct PophoryButton: View {
+    let type: ButtonType
     let title: String
     let action: () -> Void
-    let type: ButtonType
     let backgroundColor: Color
     
     var body: some View {
@@ -107,11 +107,13 @@ extension PophoryButton {
 
 #Preview {
     VStack(spacing: 20) {
-        PophoryButton(title: "포포리 버튼", action: {}, type: .standard, backgroundColor: .pryBlack)
-        PophoryButton(title: "Apple ID로 시작하기", action: {}, type: .appleLogin, backgroundColor: .pryBlack)
-        PophoryButton(title: "화이트 버튼", action: {}, type: .standard, backgroundColor: .white)
-        PophoryButton(title: "작은 버튼 그레이", action: {}, type: .small, backgroundColor: .gray400)
+        PophoryButton(type: .standard, title: "포포리 버튼", action: {},  backgroundColor: .pryBlack)
+        PophoryButton(type: .appleLogin, title: "Apple ID로 시작하기", action: {},  backgroundColor: .pryBlack)
+        PophoryButton(type: .standard, title: "화이트 버튼", action: {}, backgroundColor: .white)
+        PophoryButton(type: .small, title: "작은 버튼 블랙", action: {},  backgroundColor: .pryBlack)
+        PophoryButton(type: .small, title: "작은 버튼 그레이", action: {},  backgroundColor: .gray400)
     }
+    .padding(20)
     .background(Color.gray300)
     .cornerRadius(30)
 }
