@@ -29,9 +29,24 @@ struct PophoryTextField: View {
 	let placeholder: String
 	
 	var body: some View {
-		TextField(placeholder, text: $text)
-			.textFieldStyle(PophoryTextFieldStyle(isEmpty: .constant(text.isEmpty))
-		)
+		VStack {
+			TextField(placeholder, text: $text)
+				.textFieldStyle(PophoryTextFieldStyle(isEmpty: .constant(text.isEmpty))
+			)
+			
+			HStack {
+				Text("Error Message")
+					.fontWithLineHeightView(fontType: .caption01Medium)
+					.padding(.leading, 6)
+				
+				Spacer()
+				
+				Text("(\(text.count)/12)")
+					.fontWithLineHeightView(fontType: .text01Medium)
+					.foregroundStyle(.gray400)
+			}
+			.padding(.top, 10)
+		}
 	}
 }
 
