@@ -21,12 +21,12 @@ enum ButtonType {
         }
     }
     
-    var dimensions: (width: CGFloat, height: CGFloat) {
+    var height: CGFloat {
         switch self {
         case .standard, .appleLogin:
-            return (335, 60)
+            return 60
         case .small:
-            return (248, 47)
+            return 47
         }
     }
     
@@ -50,7 +50,7 @@ struct PophoryButtonStyle: ButtonStyle {
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .frame(width: type.dimensions.width, height: type.dimensions.height)
+            .frame(maxWidth: .infinity, minHeight: type.height)
             .background(backgroundColor)
             .foregroundColor(type.setTextColor(for: backgroundColor))
             .cornerRadius(30)
@@ -66,25 +66,21 @@ struct PophoryButton: View {
     
     var body: some View {
         Button(action: action) {
-            GeometryReader { geometry in
-                HStack {
+                Group {
                     if type.isAppleLogin {
-                        appleLoginContent(geometry)
+                        appleLoginContent()
                     } else {
                         Text(title)
                             .fontWithLineHeightView(fontType: type.fontStyle)
                     }
                 }
-                // buttonLabel 쏠림 방지
-                .frame(width: geometry.size.width, height: geometry.size.height)
-            }
         }
         .buttonStyle(PophoryButtonStyle(type: type, backgroundColor: backgroundColor))
     }
 }
 
 extension PophoryButton {
-    private func appleLoginContent(_ geometry: GeometryProxy) -> some View {
+    private func appleLoginContent() -> some View {
         HStack {
             Image(systemName: "apple.logo")
                 .resizable()
@@ -93,14 +89,11 @@ extension PophoryButton {
                 .padding(.leading, 20)
             
             Spacer()
-                .frame(width: geometry.size.width * 0.1)
             
             Text(title)
                 .fontWithLineHeightView(fontType: type.fontStyle)
-                .frame(maxWidth: .infinity)
             
             Spacer()
-                .frame(width: geometry.size.width * 0.2)
         }
     }
 }
