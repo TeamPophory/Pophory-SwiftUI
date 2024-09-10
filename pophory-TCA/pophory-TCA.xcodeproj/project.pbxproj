@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37CBFBF72C65B6390049332C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 37CBFBF62C65B6390049332C /* ComposableArchitecture */; };
 		3B1C335A2C65B552001DB285 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BC585262C6472AC003763AF /* Pretendard-Bold.otf */; };
 		3B1C335B2C65B552001DB285 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BC585232C6472AB003763AF /* Pretendard-Medium.otf */; };
 		3B1C335C2C65B552001DB285 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BC585292C6472AC003763AF /* Pretendard-Regular.otf */; };
@@ -23,6 +22,9 @@
 		3BC584F22C646531003763AF /* pophory_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584F12C646531003763AF /* pophory_TCAUITests.swift */; };
 		3BC584F42C646531003763AF /* pophory_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC584F32C646531003763AF /* pophory_TCAUITestsLaunchTests.swift */; };
 		3BC585352C64743E003763AF /* UIFontWithLineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC585342C64743E003763AF /* UIFontWithLineHeight.swift */; };
+		3BC757942C80174B00752385 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 3BC757932C80174B00752385 /* ComposableArchitecture */; };
+		3BF2F8A32C8FE18A000408A2 /* TextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2F8A22C8FE18A000408A2 /* TextFieldType.swift */; };
+		3BF2F8A52C8FE1A9000408A2 /* PophoryTextFieldSytyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2F8A42C8FE1A9000408A2 /* PophoryTextFieldSytyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		3BC585262C6472AC003763AF /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		3BC585292C6472AC003763AF /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3BC585342C64743E003763AF /* UIFontWithLineHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontWithLineHeight.swift; sourceTree = "<group>"; };
+		3BF2F8A22C8FE18A000408A2 /* TextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldType.swift; sourceTree = "<group>"; };
+		3BF2F8A42C8FE1A9000408A2 /* PophoryTextFieldSytyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PophoryTextFieldSytyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37CBFBF72C65B6390049332C /* ComposableArchitecture in Frameworks */,
+				3BC757942C80174B00752385 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +98,7 @@
 		3B00A4842C6B032000D851F1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				3B3FEDE62C7D7056001B7A81 /* PophoryTextField.swift */,
+				3BF2F8A12C8FE16E000408A2 /* PophoryTextField */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -397,6 +401,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		3BF2F8A12C8FE16E000408A2 /* PophoryTextField */ = {
+			isa = PBXGroup;
+			children = (
+				3B3FEDE62C7D7056001B7A81 /* PophoryTextField.swift */,
+				3BF2F8A22C8FE18A000408A2 /* TextFieldType.swift */,
+				3BF2F8A42C8FE1A9000408A2 /* PophoryTextFieldSytyle.swift */,
+			);
+			path = PophoryTextField;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -414,7 +428,7 @@
 			);
 			name = "pophory-TCA";
 			packageProductDependencies = (
-				37CBFBF62C65B6390049332C /* ComposableArchitecture */,
+				3BC757932C80174B00752385 /* ComposableArchitecture */,
 			);
 			productName = "pophory-TCA";
 			productReference = 3BC584D32C646530003763AF /* pophory-TCA.app */;
@@ -489,7 +503,7 @@
 			);
 			mainGroup = 3BC584CA2C646530003763AF;
 			packageReferences = (
-				37CBFBF52C65B6390049332C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				3BC757922C80174B00752385 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 3BC584D42C646530003763AF /* Products */;
 			projectDirPath = "";
@@ -537,8 +551,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF2F8A32C8FE18A000408A2 /* TextFieldType.swift in Sources */,
 				3B3B9BE42C675E6B00AF9D5C /* View+.swift in Sources */,
 				3B3FEDE72C7D7056001B7A81 /* PophoryTextField.swift in Sources */,
+				3BF2F8A52C8FE1A9000408A2 /* PophoryTextFieldSytyle.swift in Sources */,
 				3BC585352C64743E003763AF /* UIFontWithLineHeight.swift in Sources */,
 				3B3B9BE62C675E7400AF9D5C /* ViewModifier+.swift in Sources */,
 				3BC584D92C646530003763AF /* ContentView.swift in Sources */,
@@ -876,20 +892,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		37CBFBF52C65B6390049332C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		3BC757922C80174B00752385 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.12.1;
+				minimumVersion = 1.14.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		37CBFBF62C65B6390049332C /* ComposableArchitecture */ = {
+		3BC757932C80174B00752385 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 37CBFBF52C65B6390049332C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = 3BC757922C80174B00752385 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
