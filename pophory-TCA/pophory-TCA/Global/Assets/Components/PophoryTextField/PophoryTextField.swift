@@ -36,7 +36,7 @@ struct PophoryTextField: View {
 				
 				Spacer()
 				
-				Text("(\(text.count)/\(type.maxCharacterLimit)")
+				Text("(\(text.count)/\(type.maxCharacterLimit))")
 					.fontWithLineHeightView(fontType: .text01Medium)
 					.foregroundStyle(.gray400)
 			}
