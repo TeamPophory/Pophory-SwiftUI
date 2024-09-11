@@ -5,8 +5,6 @@
 //  Created by 강윤서 on 9/10/24.
 //
 
-import Foundation
-
 enum TextFieldType {
 	case id
 	case nickName
